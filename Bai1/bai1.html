@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bai1</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="layer">
+            <h1>REGISTER FORM</h1>
+            <div class="form" action="">
+                <div class="name">
+                    <h3>Username</h3>
+
+                    <input id="name" type="text" placeholder="Enter your name ...">
+                </div>
+                <span id="name_error" class="error"></span>
+
+                <div class="password">
+                    <h3>Password</h3>
+                    <input id="password" type="password" placeholder="Enter your password ...">
+                </div>
+                <span id="password_error" class="error"></span>
+
+                <div class="email">
+                    <h3>Email</h3>
+                    <input id="email" type="text" placeholder="Enter your email ...">
+                </div>
+                <span id="email_error" class="error"></span>
+
+                <div class="sex">
+                    <h3>Gender</h3>
+                    <div>
+                        <input type="radio" name="sex" id="male" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <h3>Are you</h3>
+                    <div>
+                        <select name="job" id="job">
+                            <option value="">Select your job</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <span id="job_error" class="error"></span>
+
+                <div class="accept">
+                    <input type="checkbox" name="accept" id="accept" checked>
+                    <label for="accept">I accept Terms and Conditions</label><br>
+                </div>
+                <span id="accept_error" class="error"></span>
+
+                <input id="submit" class="action" onclick="submit()" type="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
