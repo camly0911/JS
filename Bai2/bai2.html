@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="chatbox">
+            <div class="main_chat" id="main_chat1">
+            </div>
+            <div class="format">
+                <div class="format-button">
+                    <button id="dam-btn1" onclick="ChangeStatusBold('left')">Đậm</button>
+                    <button id="nghieng-btn1" onclick="ChangeStatusItalic('left')">Nghiêng</button>
+                    <button id="reset-btn1">Reset</button>
+                </div>
+                <div class="message">
+                    <textarea name="" id="left" cols="24" rows="3" style="margin-right: 10px;margin-left: 5px;"></textarea>
+                    <button id="send-bt1" onclick="SendMessage('left')">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="chatbox">
+            <div class="main_chat" id="main_chat2">
+            </div>
+            <div class="format">
+                <div class="format-button">
+                    <button id="dam-btn2" onclick="ChangeStatusBold('right')">Đậm</button>
+                    <button id="nghieng-btn2" onclick="ChangeStatusItalic('right')">Nghiêng</button>
+                    <button id="reset-btn2">Reset</button>
+                </div>
+                <div class="message">
+                    <textarea name="" id="right" cols="24" rows="3" style="margin-right: 10px;margin-left: 5px;"></textarea>
+                    <button id="send-bt2" onclick="SendMessage('right')">Send</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
